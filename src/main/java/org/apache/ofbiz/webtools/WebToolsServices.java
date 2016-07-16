@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools;
+package org.apache.ofbiz.webtools;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -47,47 +47,47 @@ import java.util.TreeSet;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.ofbiz.base.location.FlexibleLocation;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.StringUtil;
-import org.ofbiz.base.util.UtilDateTime;
-import org.ofbiz.base.util.UtilGenerics;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilPlist;
-import org.ofbiz.base.util.UtilProperties;
-import org.ofbiz.base.util.UtilProperties.UtilResourceBundle;
-import org.ofbiz.base.util.UtilURL;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.base.util.template.FreeMarkerWorker;
-import org.ofbiz.entity.Delegator;
-import org.ofbiz.entity.DelegatorFactory;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.entity.condition.EntityCondition;
-import org.ofbiz.entity.condition.EntityOperator;
-import org.ofbiz.entity.model.ModelEntity;
-import org.ofbiz.entity.model.ModelField;
-import org.ofbiz.entity.model.ModelFieldType;
-import org.ofbiz.entity.model.ModelIndex;
-import org.ofbiz.entity.model.ModelKeyMap;
-import org.ofbiz.entity.model.ModelReader;
-import org.ofbiz.entity.model.ModelRelation;
-import org.ofbiz.entity.model.ModelUtil;
-import org.ofbiz.entity.model.ModelViewEntity;
-import org.ofbiz.entity.transaction.TransactionUtil;
-import org.ofbiz.entity.util.EntityDataAssert;
-import org.ofbiz.entity.util.EntityDataLoader;
-import org.ofbiz.entity.util.EntityListIterator;
-import org.ofbiz.entity.util.EntityQuery;
-import org.ofbiz.entity.util.EntitySaxReader;
-import org.ofbiz.entityext.EntityGroupUtil;
-import org.ofbiz.security.Security;
-import org.ofbiz.service.DispatchContext;
-import org.ofbiz.service.LocalDispatcher;
-import org.ofbiz.service.ServiceUtil;
-import org.ofbiz.webtools.artifactinfo.ArtifactInfoFactory;
-import org.ofbiz.webtools.artifactinfo.ServiceArtifactInfo;
+import org.apache.ofbiz.base.location.FlexibleLocation;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.StringUtil;
+import org.apache.ofbiz.base.util.UtilDateTime;
+import org.apache.ofbiz.base.util.UtilGenerics;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilPlist;
+import org.apache.ofbiz.base.util.UtilProperties;
+import org.apache.ofbiz.base.util.UtilProperties.UtilResourceBundle;
+import org.apache.ofbiz.base.util.UtilURL;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.base.util.template.FreeMarkerWorker;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.DelegatorFactory;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.condition.EntityCondition;
+import org.apache.ofbiz.entity.condition.EntityOperator;
+import org.apache.ofbiz.entity.model.ModelEntity;
+import org.apache.ofbiz.entity.model.ModelField;
+import org.apache.ofbiz.entity.model.ModelFieldType;
+import org.apache.ofbiz.entity.model.ModelIndex;
+import org.apache.ofbiz.entity.model.ModelKeyMap;
+import org.apache.ofbiz.entity.model.ModelReader;
+import org.apache.ofbiz.entity.model.ModelRelation;
+import org.apache.ofbiz.entity.model.ModelUtil;
+import org.apache.ofbiz.entity.model.ModelViewEntity;
+import org.apache.ofbiz.entity.transaction.TransactionUtil;
+import org.apache.ofbiz.entity.util.EntityDataAssert;
+import org.apache.ofbiz.entity.util.EntityDataLoader;
+import org.apache.ofbiz.entity.util.EntityListIterator;
+import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.entity.util.EntitySaxReader;
+import org.apache.ofbiz.entityext.EntityGroupUtil;
+import org.apache.ofbiz.security.Security;
+import org.apache.ofbiz.service.DispatchContext;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ServiceUtil;
+import org.apache.ofbiz.webtools.artifactinfo.ArtifactInfoFactory;
+import org.apache.ofbiz.webtools.artifactinfo.ServiceArtifactInfo;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -155,7 +155,7 @@ public class WebToolsServices {
 
             Template template = null;
             try {
-                Configuration conf = org.ofbiz.base.util.template.FreeMarkerWorker.getDefaultOfbizConfig();
+                Configuration conf = org.apache.ofbiz.base.util.template.FreeMarkerWorker.getDefaultOfbizConfig();
                 template = new Template("FMImportFilter", templateReader, conf);
                 Map<String, Object> fmcontext = new HashMap<String, Object>();
 
@@ -346,7 +346,7 @@ public class WebToolsServices {
             }
         }
 
-        String groupNameToUse = overrideGroup != null ? overrideGroup : "org.ofbiz";
+        String groupNameToUse = overrideGroup != null ? overrideGroup : "org.apache.ofbiz";
         Delegator delegator = null;
         if (UtilValidate.isNotEmpty(overrideDelegator)) {
             delegator = DelegatorFactory.getDelegator(overrideDelegator);

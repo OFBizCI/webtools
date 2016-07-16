@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  *******************************************************************************/
-package org.ofbiz.webtools.print;
+package org.apache.ofbiz.webtools.print;
 
 import java.util.Map;
 import java.util.Locale;
@@ -28,18 +28,18 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.codec.binary.Base64;
 
-import org.ofbiz.service.LocalDispatcher;
-import org.ofbiz.service.DispatchContext;
-import org.ofbiz.base.util.UtilHttp;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.entity.util.EntityUtilProperties;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.widget.renderer.ScreenRenderer;
-import org.ofbiz.widget.renderer.ScreenStringRenderer;
-import org.ofbiz.widget.renderer.macro.MacroScreenRenderer;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.DispatchContext;
+import org.apache.ofbiz.base.util.UtilHttp;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.util.EntityUtilProperties;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.widget.renderer.ScreenRenderer;
+import org.apache.ofbiz.widget.renderer.ScreenStringRenderer;
+import org.apache.ofbiz.widget.renderer.macro.MacroScreenRenderer;
 
 /**
  * FoPrintServerEvents

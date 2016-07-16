@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.artifactinfo;
+package org.apache.ofbiz.webtools.artifactinfo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,24 +31,24 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.ofbiz.base.location.FlexibleLocation;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.FileUtil;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.UtilJavaParse;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilPlist;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.minilang.MiniLangException;
-import org.ofbiz.minilang.SimpleMethod;
-import org.ofbiz.minilang.artifact.ArtifactInfoContext;
-import org.ofbiz.service.ModelParam;
-import org.ofbiz.service.ModelService;
-import org.ofbiz.service.eca.ServiceEcaRule;
-import org.ofbiz.service.eca.ServiceEcaUtil;
-import org.ofbiz.service.group.GroupModel;
-import org.ofbiz.service.group.GroupServiceModel;
-import org.ofbiz.service.group.ServiceGroupReader;
+import org.apache.ofbiz.base.location.FlexibleLocation;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.FileUtil;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.UtilJavaParse;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilPlist;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.minilang.MiniLangException;
+import org.apache.ofbiz.minilang.SimpleMethod;
+import org.apache.ofbiz.minilang.artifact.ArtifactInfoContext;
+import org.apache.ofbiz.service.ModelParam;
+import org.apache.ofbiz.service.ModelService;
+import org.apache.ofbiz.service.eca.ServiceEcaRule;
+import org.apache.ofbiz.service.eca.ServiceEcaUtil;
+import org.apache.ofbiz.service.group.GroupModel;
+import org.apache.ofbiz.service.group.GroupServiceModel;
+import org.apache.ofbiz.service.group.ServiceGroupReader;
 
 /**
  *

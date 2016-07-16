@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.artifactinfo;
+package org.apache.ofbiz.webtools.artifactinfo;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -26,16 +26,16 @@ import java.util.TreeSet;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.ofbiz.base.location.FlexibleLocation;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilURL;
-import org.ofbiz.widget.artifact.ArtifactInfoContext;
-import org.ofbiz.widget.artifact.ArtifactInfoGatherer;
-import org.ofbiz.widget.model.ModelForm;
-import org.ofbiz.widget.model.ModelGrid;
-import org.ofbiz.widget.model.ModelSingleForm;
+import org.apache.ofbiz.base.location.FlexibleLocation;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilURL;
+import org.apache.ofbiz.widget.artifact.ArtifactInfoContext;
+import org.apache.ofbiz.widget.artifact.ArtifactInfoGatherer;
+import org.apache.ofbiz.widget.model.ModelForm;
+import org.apache.ofbiz.widget.model.ModelGrid;
+import org.apache.ofbiz.widget.model.ModelSingleForm;
 import org.xml.sax.SAXException;
 
 /**

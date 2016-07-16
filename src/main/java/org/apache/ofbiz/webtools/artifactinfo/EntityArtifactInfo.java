@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.artifactinfo;
+package org.apache.ofbiz.webtools.artifactinfo;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,12 +25,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.ofbiz.base.location.FlexibleLocation;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.model.ModelEntity;
-import org.ofbiz.entity.model.ModelRelation;
-import org.ofbiz.entityext.eca.EntityEcaRule;
+import org.apache.ofbiz.base.location.FlexibleLocation;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.model.ModelEntity;
+import org.apache.ofbiz.entity.model.ModelRelation;
+import org.apache.ofbiz.entityext.eca.EntityEcaRule;
 
 /**
  *

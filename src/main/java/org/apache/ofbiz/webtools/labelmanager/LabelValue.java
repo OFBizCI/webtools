@@ -16,31 +16,33 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.labelmanager;
+package org.apache.ofbiz.webtools.labelmanager;
 
-import java.io.File;
+public class LabelValue {
 
-public class LabelFile {
-    public static final String module = LabelFile.class.getName();
+    public static final String module = LabelValue.class.getName();
 
-    protected final boolean fileLoaded = false;
-    protected final File file;
-    protected final String componentName;
+    protected String labelValue = "";
+    protected String labelComment = "";
 
-    protected LabelFile(File file, String componentName) {
-        this.file = file;
-        this.componentName = componentName;
+    public LabelValue(String labelValue, String labelComment) {
+        this.labelValue = labelValue;
+        this.labelComment = labelComment;
     }
 
-    public File getFile() {
-        return this.file;
+    public String getLabelValue() {
+        return labelValue;
     }
 
-    public String getFileName() {
-        return this.file.getName();
+    public String getLabelComment() {
+        return labelComment;
     }
 
-    public String getFilePath() {
-        return this.file.getPath();
+    public void setLabelValue(String labelValue) {
+        this.labelValue = labelValue;
+    }
+
+    public void setLabelComment(String labelComment) {
+        this.labelComment = labelComment;
     }
 }

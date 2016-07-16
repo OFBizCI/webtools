@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.artifactinfo;
+package org.apache.ofbiz.webtools.artifactinfo;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,29 +34,29 @@ import java.util.concurrent.Future;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.ofbiz.base.component.ComponentConfig;
-import org.ofbiz.base.concurrent.ExecutionPool;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.FileUtil;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.base.util.cache.UtilCache;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.config.model.DelegatorElement;
-import org.ofbiz.entity.config.model.EntityConfig;
-import org.ofbiz.entity.model.ModelEntity;
-import org.ofbiz.entity.model.ModelReader;
-import org.ofbiz.service.DispatchContext;
-import org.ofbiz.service.GenericServiceException;
-import org.ofbiz.service.ModelService;
-import org.ofbiz.service.eca.ServiceEcaRule;
-import org.ofbiz.webapp.control.ConfigXMLReader;
-import org.ofbiz.webapp.control.ConfigXMLReader.ControllerConfig;
-import org.ofbiz.webapp.control.WebAppConfigurationException;
-import org.ofbiz.widget.model.FormFactory;
-import org.ofbiz.widget.model.ModelForm;
-import org.ofbiz.widget.model.ModelScreen;
-import org.ofbiz.widget.model.ScreenFactory;
+import org.apache.ofbiz.base.component.ComponentConfig;
+import org.apache.ofbiz.base.concurrent.ExecutionPool;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.FileUtil;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.base.util.cache.UtilCache;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.config.model.DelegatorElement;
+import org.apache.ofbiz.entity.config.model.EntityConfig;
+import org.apache.ofbiz.entity.model.ModelEntity;
+import org.apache.ofbiz.entity.model.ModelReader;
+import org.apache.ofbiz.service.DispatchContext;
+import org.apache.ofbiz.service.GenericServiceException;
+import org.apache.ofbiz.service.ModelService;
+import org.apache.ofbiz.service.eca.ServiceEcaRule;
+import org.apache.ofbiz.webapp.control.ConfigXMLReader;
+import org.apache.ofbiz.webapp.control.ConfigXMLReader.ControllerConfig;
+import org.apache.ofbiz.webapp.control.WebAppConfigurationException;
+import org.apache.ofbiz.widget.model.FormFactory;
+import org.apache.ofbiz.widget.model.ModelForm;
+import org.apache.ofbiz.widget.model.ModelScreen;
+import org.apache.ofbiz.widget.model.ScreenFactory;
 import org.xml.sax.SAXException;
 
 public class ArtifactInfoFactory {

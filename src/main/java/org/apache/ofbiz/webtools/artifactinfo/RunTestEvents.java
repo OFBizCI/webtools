@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  *******************************************************************************/
-package org.ofbiz.webtools.artifactinfo;
+package org.apache.ofbiz.webtools.artifactinfo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.ofbiz.base.container.ContainerException;
+import org.apache.ofbiz.base.container.ContainerException;
 
-import org.ofbiz.testtools.*;
+import org.apache.ofbiz.testtools.*;
 
 /**
  * Event used to run a Junit test

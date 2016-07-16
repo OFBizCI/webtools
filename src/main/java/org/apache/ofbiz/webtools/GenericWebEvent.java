@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  *******************************************************************************/
-package org.ofbiz.webtools;
+package org.apache.ofbiz.webtools;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -27,20 +27,20 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.UtilHttp;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilProperties;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.entity.Delegator;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.entity.model.ModelEntity;
-import org.ofbiz.entity.model.ModelField;
-import org.ofbiz.entity.model.ModelFieldType;
-import org.ofbiz.entity.model.ModelReader;
-import org.ofbiz.entity.util.EntityQuery;
-import org.ofbiz.security.Security;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.UtilHttp;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilProperties;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.model.ModelEntity;
+import org.apache.ofbiz.entity.model.ModelField;
+import org.apache.ofbiz.entity.model.ModelFieldType;
+import org.apache.ofbiz.entity.model.ModelReader;
+import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.security.Security;
 
 /**
  * Web Event for doing updates on Generic Entities
@@ -232,7 +232,7 @@ public class GenericWebEvent {
                 Class<?>[] paramTypes = new Class[] {String.class};
                 Object[] params = new Object[] {findByEntity.get(field.getName()).toString()};
 
-                String className = "org.ofbiz.base.util.UtilValidate";
+                String className = "org.apache.ofbiz.base.util.UtilValidate";
                 String methodName = curValidate;
 
                 if (curValidate.indexOf('.') > 0) {

@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.ofbiz.webtools.labelmanager;
+package org.apache.ofbiz.webtools.labelmanager;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.UtilValidate;
 
 public class LabelInfo {
 
